@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://wuji.tech";
+const BASE_URL = "https://wjkj-prys.com";
 
 export const dynamic = "force-static";
 

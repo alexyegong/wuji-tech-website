@@ -75,10 +75,10 @@ export default function Contact() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
           <a
-            href="mailto:bd@wujitech.com"
+            href="mailto:bd@wjkj-prys.com"
             className="text-[#0d5e4a] font-medium hover:underline"
           >
-            📧 bd@wujitech.com
+            📧 bd@wjkj-prys.com
           </a>
           <span className="text-gray-300">|</span>
           <span className="text-gray-500">📍 广州市</span>

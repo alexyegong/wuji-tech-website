@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "无疾科技",
     images: [
       {
-        url: "https://wuji.tech/og-image.svg",
+        url: "https://wjkj-prys.com/og-image.svg",
         width: 1200,
         height: 630,
         alt: "无疾科技 — 数字中医减熵系统",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "无疾科技 — 数字中医减熵系统",
     description: "为生命体注入负熵，从无序回归有序。",
-    images: ["https://wuji.tech/og-image.svg"],
+    images: ["https://wjkj-prys.com/og-image.svg"],
   },
-  metadataBase: new URL("https://wuji.tech"),
+  metadataBase: new URL("https://wjkj-prys.com"),
 };
 
 export default function RootLayout({
@@ -76,8 +76,8 @@ export default function RootLayout({
               "@type": "Organization",
               name: "广州无疾科技有限公司",
               alternateName: "无疾科技",
-              url: "https://wuji.tech",
-              logo: "https://wuji.tech/logo.png",
+              url: "https://wjkj-prys.com",
+              logo: "https://wjkj-prys.com/logo.png",
               description: "数字中医减熵系统研发企业",
               address: {
                 "@type": "PostalAddress",
