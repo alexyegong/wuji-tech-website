@@ -16,7 +16,7 @@ export default function Home() {
             从无序回归有序
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            三唯框架：物质感知 → 信息能量分析 → 意识干预
+            三维框架：物质感知 → 信息能量分析 → 意识干预
             <br />
             将中华阴阳五行哲学与现代AI技术深度融合
           </p>
@@ -39,7 +39,7 @@ export default function Home() {
 
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">三唯减熵引擎</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">三维减熵引擎</h2>
           <p className="text-gray-500 text-center mb-16 max-w-xl mx-auto">
             三层递进架构，从感知到干预的完整闭环
           </p>

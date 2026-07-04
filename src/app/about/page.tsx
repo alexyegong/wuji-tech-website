@@ -53,12 +53,12 @@ export default function About() {
         <p className="text-gray-700 leading-relaxed">
           大数据平台:{" "}
           <a
-            href="https://www.it-dragon.com:8443"
+            href="https://www.it-dragon.com:8443/Enterprise/ServletControl?_NAME_=qy.information.home"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#1a8a6e] underline"
+            className="text-[#1a8a6e] underline break-all"
           >
-            www.it-dragon.com:8443
+            www.it-dragon.com:8443/Enterprise/ServletControl?_NAME_=qy.information.home
           </a>
         </p>
       </section>

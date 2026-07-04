@@ -34,6 +34,16 @@ export default function Footer() {
               <p>广州普朗克生命频率研究院</p>
               <p>大数据平台: www.it-dragon.com:8443</p>
             </div>
+            <div className="flex gap-4 mt-4">
+              <div className="text-center">
+                <img src="/qr-wechat-work.png" alt="企业微信" className="w-24 h-24" />
+                <p className="text-xs mt-1">企业微信</p>
+              </div>
+              <div className="text-center">
+                <img src="/qr-wechat-official.png" alt="微信公众号" className="w-24 h-24" />
+                <p className="text-xs mt-1">微信公众号</p>
+              </div>
+            </div>
           </div>
         </div>
 

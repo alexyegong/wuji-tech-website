@@ -1,0 +1,21 @@
+{
+  "project": "wuji-tech-website",
+  "domain": "wjkj-prys.com",
+  "platform": "cloudflare-pages",
+  "status": "ready-for-deployment",
+  "out_directory_size": "1.7MB",
+  "pages_exported": [
+    "index.html (首页)",
+    "about.html (关于)",
+    "products.html (产品)",
+    "blog.html (博客列表)",
+    "blog/hello-digital-tcm.html (博文1)",
+    "blog/tcm-philosophy.html (博文2)",
+    "contact.html (联系)"
+  ],
+  "next_steps": [
+    "1. 按 DEPLOY.md 操作，或",
+    "2. 先在 GitHub 创建 alexyegong/wuji-tech-website 仓库，然后 git push",
+    "3. 在 Cloudflare Pages 绑定域名 wjkj-prys.com"
+  ]
+}
