@@ -33,3 +33,6 @@ body {
 .prose ul { @apply list-disc pl-6 mb-4 text-gray-700 space-y-1; }
 .prose a { @apply text-[#1a8a6e] underline hover:text-[#0d5e4a]; }
 .prose blockquote { @apply border-l-4 border-[#c8a96e] pl-4 italic text-gray-600 my-6; }
+.prose table { @apply w-full border-collapse my-6 text-sm; }
+.prose th { @apply border-b-2 border-[#0d5e4a] px-3 py-2 text-left font-semibold text-[#0d5e4a] bg-[#f8fdf9]; }
+.prose td { @apply border-b border-gray-200 px-3 py-2 text-gray-700; }
