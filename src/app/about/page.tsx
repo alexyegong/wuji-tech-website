@@ -7,6 +7,8 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
+  const bigDataUrl = "https://www.it-dragon.com:8443/Enterprise/ServletControl?_NAME_=qy.information.home";
+  
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold mb-8">关于无疾科技</h1>
@@ -47,18 +49,18 @@ export default function About() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#0d5e4a] mb-4">大数据平台</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          自主研发的健康大数据平台已累计监测超过 &nbsp;435万人，覆盖 1.22亿 检测部位，
+          自主研发的健康大数据平台已累计监测超过 435万人，覆盖 1.22亿 检测部位，
           积累 2.17亿 条风险数据，涵盖 392类 健康分类。
         </p>
         <p className="text-gray-700 leading-relaxed">
           大数据平台:{" "}
           <a
-            href="https://www.it-dragon.com:8443/Enterprise/ServletControl?_NAME_=qy.information.home"
+            href={bigDataUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#1a8a6e] underline break-all"
           >
-            www.it-dragon.com:8443/Enterprise/ServletControl?_NAME_=qy.information.home
+            {bigDataUrl}
           </a>
         </p>
       </section>

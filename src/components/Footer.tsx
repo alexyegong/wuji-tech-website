@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-[#1a1a2e] text-gray-400 mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -8,47 +12,47 @@ export default function Footer() {
               <div className="w-6 h-6 rounded-full bg-[#c8a96e] flex items-center justify-center">
                 <span className="text-white text-xs font-bold">無</span>
               </div>
-              <span className="text-white font-semibold">无疾科技</span>
+              <span className="text-white font-semibold">{t("brand")}</span>
             </div>
             <p className="text-sm leading-relaxed">
-              广州无疾科技有限公司 — 数字中医引领者。
+              {t("title")}
               <br />
-              为生命体注入负熵，从无序回归有序。
+              {t("subtitle")}
             </p>
           </div>
 
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">产品</h4>
+            <h4 className="text-white text-sm font-semibold mb-4">{t("products")}</h4>
             <div className="space-y-2 text-sm">
-              <p>智能坐垫</p>
-              <p>中医手表</p>
-              <p>单机手环</p>
-              <p>四手环联动系统</p>
+              <p>{t("prod_1")}</p>
+              <p>{t("prod_2")}</p>
+              <p>{t("prod_3")}</p>
+              <p>{t("prod_4")}</p>
             </div>
           </div>
 
           <div>
-            <h4 className="text-white text-sm font-semibold mb-4">联系</h4>
+            <h4 className="text-white text-sm font-semibold mb-4">{t("contact")}</h4>
             <div className="space-y-2 text-sm">
-              <p>广州无疾科技有限公司</p>
-              <p>广州普朗克生命频率研究院</p>
-              <p>大数据平台: www.it-dragon.com:8443</p>
+              <p>{t("addr_1")}</p>
+              <p>{t("addr_2")}</p>
+              <p>{t("platform")}</p>
             </div>
             <div className="flex gap-4 mt-4">
               <div className="text-center">
-                <img src="/qr-wechat-work.png" alt="企业微信" className="w-24 h-24" />
-                <p className="text-xs mt-1">企业微信</p>
+                <img src="/qr-wechat-work.png" alt={t("wechat_work")} className="w-24 h-24" />
+                <p className="text-xs mt-1">{t("wechat_work")}</p>
               </div>
               <div className="text-center">
-                <img src="/qr-wechat-official.png" alt="微信公众号" className="w-24 h-24" />
-                <p className="text-xs mt-1">微信公众号</p>
+                <img src="/qr-wechat-official.png" alt={t("wechat_official")} className="w-24 h-24" />
+                <p className="text-xs mt-1">{t("wechat_official")}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-xs">
-          &copy; {new Date().getFullYear()} 广州无疾科技有限公司. All rights reserved.
+          &copy; {new Date().getFullYear()} {t("copyright")}
         </div>
       </div>
     </footer>
