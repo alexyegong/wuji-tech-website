@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { I18nWrapper } from "@/components/I18nWrapper";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -85,9 +86,11 @@ export default function RootLayout({
             }),
           }}
         />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <I18nWrapper locale="zh">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </I18nWrapper>
       </body>
     </html>
   );
