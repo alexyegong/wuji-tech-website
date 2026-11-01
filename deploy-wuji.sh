@@ -113,7 +113,8 @@ verify() {
 case "$MODE" in
   --deploy-only)
     build
-    deploy && verify
+    deploy || { err "部署失败，终止"; exit 1; }
+    verify || exit 1
     ;;
   --build-only)
     build
@@ -121,7 +122,8 @@ case "$MODE" in
   full|*)
     build
     git_push "$MSG"
-    deploy && verify
+    deploy || { err "部署失败，终止"; exit 1; }
+    verify || exit 1
     ;;
 esac
 
