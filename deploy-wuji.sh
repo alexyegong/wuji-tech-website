@@ -35,7 +35,13 @@ get_cf_token() {
   fi
 }
 
-MODE="${1:-full}"
+MODE="full"; MSG=""
+case "${1:-}" in
+  --deploy-only|--build-only) MODE="$1" ;;
+  "") ;;
+  *) MSG="$1" ;;   # 只给描述时仍走全流程，描述作为 commit message
+esac
+
 CF_TOKEN=$(get_cf_token)
 if [ -z "$CF_TOKEN" ]; then
   err "未找到 Cloudflare API token: $CF_TOKEN_FILE"
@@ -61,7 +67,7 @@ deploy() {
   log "=== wrangler 部署到 Cloudflare Pages ==="
   DEPLOY_OUT=$(CLOUDFLARE_API_TOKEN="$CF_TOKEN" timeout 300 npx wrangler pages deploy out --project-name=wuji-tech-website 2>&1)
   echo "$DEPLOY_OUT" | grep -E 'Success|Deploying|complete|https://|ERROR|error' | head -8
-  PREVIEW_URL=$(echo "$DEPLOY_OUT" | grep -oE 'https://[a-z0-9]+\.wuji-tech-website\.pages\.dev' | head -1)
+  PREVIEW_URL=$(echo "$DEPLOY_OUT" | grep -oE 'https://[a-z0-9]+\.wuji-tech-website\.pages\.dev' | head -1 || true)
   echo "$PREVIEW_URL" > /tmp/last-deploy-url.txt
   if [ -z "$PREVIEW_URL" ]; then
     err "部署未返回 preview URL, 部署可能失败"
@@ -114,7 +120,7 @@ case "$MODE" in
     ;;
   full|*)
     build
-    git_push "$2"
+    git_push "$MSG"
     deploy && verify
     ;;
 esac
