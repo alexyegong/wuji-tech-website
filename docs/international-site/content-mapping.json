@@ -1,0 +1,12 @@
+{
+  "blog": {
+    "article-01": {
+      "zh": "熬夜、饮酒如何协同破坏血糖稳态？基于三维减熵模型的量化应对策略。",
+      "en": "How Do Late Nights and Alcohol Synergistically Disrupt Glucose Homeostasis? A Quantitative Strategy Based on the 3D Entropy-Reduction Model."
+    },
+    "article-02": {
+      "zh": "糖尿病饮食控制被许多患者视为“人生最大的修行”，其艰难程度远超常人想象。",
+      "en": "For many patients, diabetes diet control is viewed as 'the greatest discipline in life', far more difficult than most imagine."
+    }
+  }
+}

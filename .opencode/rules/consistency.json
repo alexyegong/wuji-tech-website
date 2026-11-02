@@ -1,0 +1,6 @@
+{
+  "rule": "enforce-3d-framework",
+  "action": "block-merge",
+  "description": "Ensure 3D Framework terms are present in all UI components",
+  "script": "python src/scripts/enforce-3d-framework.py"
+}
